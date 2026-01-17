@@ -12,7 +12,7 @@
 
 .PARAMETER Scope
     The scope required to access the device management scripts.
-    Default value is "DeviceManagementConfiguration.Read.All".
+    Default value is "DeviceManagementScripts.Read.All".
 
 .PARAMETER exportDirectory
     The directory path where the scripts should be exported.
@@ -35,7 +35,7 @@ function Get-IntuneDeviceConfigurationScripts {
         [Parameter()]
         [System.String]$Uri = "https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts",
         [Parameter()]
-        [System.String]$Scope = "DeviceManagementConfiguration.Read.All",
+        [System.String]$Scope = "DeviceManagementScripts.Read.All",
         [Parameter()]
         [System.String]$exportDirectory
     )
